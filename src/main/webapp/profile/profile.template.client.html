@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./profile.style.client.css">
+    <title>Profile</title>
+
+</head>
+
+
+<div class="container">
+    <h1>Profile</h1>
+    <div class="alert alert-primary" role="alert">
+        Profile has been updated successfully!
+    </div>
+    <br>
+    Username: <input id="userNameInput"
+                     type="text"
+                     placeholder="johnny"
+                     title="Please type your username"
+                     value="alice"
+                     class="form-control"
+                     disabled="disabled" readonly/>
+    <br>
+    Phone: <input id="phoneFld"
+                  value="408-39-9334"
+                  type="tel"/>
+    </br>
+    <br>
+    Email: <input type="email"
+                  class="form-control"
+                  id="emailFld"/>
+    <form action="/action_page.php">
+        <br>
+        <label for="dobFld">Date of Birth:</label>
+        <input type="date"
+               value="1993-12-21"
+               class="form-control"
+               id="dobFld">
+    </form>
+    <form action="/action_page.php">
+        <br>
+        <label for="roleFld">Role</label>
+        <select name="role" id="roleFld">
+            <option value="Faculty">Faculty</option>
+            <option value="Student">Student</option>
+            <option value="Admin">Admin</option>
+        </select>
+    </form>
+    <br>
+    <a id="updateBtn" class="btn btn-success btn-block">Update</a>
+    <a id="logoutBtn" class="btn btn-danger btn-block" href="/index.html" >Logout</a>
+
+    <div class="alertFld">
+    </div>
+</div>
+</html>
